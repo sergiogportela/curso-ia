@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags para configuração básica da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ementa e Cronograma - Curso de IA</title>
+    
+    <!-- Importação da fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- CSS adicional para esta página -->
+    <style>
+        /* Estilos específicos para a página de ementa */
+        .ementa-container {
+            margin-bottom: 3rem;
+        }
+        
+        .cronograma-item {
+            margin-bottom: 2rem;
+            border-left: 3px solid var(--azul-claro);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .cronograma-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--azul-claro);
+        }
+        
+        .voltar-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--azul-medio) 0%, var(--roxo-escuro) 100%);
+            color: var(--texto-claro);
+            border: none;
+            padding: 0.7rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(1, 105, 153, 0.3);
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .voltar-btn::before {
+            content: '←';
+            margin-right: 0.5rem;
+        }
+        
+        .voltar-btn:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 8px 20px rgba(1, 105, 153, 0.5);
+        }
+    </style>
+    
+    <!-- Importação do CSS do AOS (Animate On Scroll) para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Overlay de estrelas para o fundo -->
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="logo-container" data-aos="fade-down">
+            <img src="imgs/logo_com_fonte_branca_e_fundo_transparente.png" alt="Logo do Curso" class="logo">
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <a href="index.html" class="voltar-btn" data-aos="fade-right">Voltar para a página inicial</a>
+        
+        <section class="hero" data-aos="fade-up">
+            <h1>Ementa e Cronograma</h1>
+            <p class="subtitle">Conheça o conteúdo completo do nosso curso de IA</p>
+        </section>
+
+        <section class="content-container ementa-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="content-card">
+                <h2>Conteúdo Programático</h2>
+                <div class="content-text">
+                    <!-- Aqui estará o conteúdo extraído do arquivo 02_Conteúdo e Cronograma.md -->
+                    <div class="cronograma-item" data-aos="fade-up">
+                        <h3>0. Base conceitual</h3>
+                        <h4>As 3 etapas que constroem de todo LLM</h4>
+                        <ol>
+                            <li>
+                                <strong>Treino (construir conhecimento - entender como as palavras se relacionam)</strong>
+                                <ul>
+                                    <li>Montagem da rede neural: um cérebro vazio, porém pronto (terá poucas alterações após este processo)</li>
+                                    <li>Que informação está aqui?</li>
+                                    <li>Como foi tratada?</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Pós-Treino (alinhar conhecimento a formato de assistente e aprender pela experiencia resolvendo problemas reais, melhorando a cada tentativa)</strong>
+                                <ul>
+                                    <li>Alinhamento (Fine-tuning) (ajusta camadas finais da rede)</li>
+                                    <li>Aprendizagem por reforço (RL) (ajusta todas as camadas da rede)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Inferência em janela limitada (responder suas perguntas/ajudar a resolver os seus problemas)</strong>
+                                <ul>
+                                    <li>É a soma do:
+                                        <ol>
+                                            <li>Prompt de sistema</li>
+                                            <li>Todas as palavras que você escreveu na conversa atual</li>
+                                            <li>Todas as palavras que o modelo previu na conversa atual</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    
+                    <!-- Mais itens do cronograma serão adicionados aqui... -->
+                    <p class="text-center"><em>O conteúdo completo da ementa será disponibilizado em breve...</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Curso de Inteligência Artificial. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Inicializar as animações da biblioteca AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializa as animações
+            AOS.init({
+                duration: 800,          // Duração das animações
+                easing: 'ease-out',     // Tipo de easing
+                once: false,            // Animações só ocorrem uma vez ou sempre que rolar a página
+                mirror: true,           // Se os elementos devem animar ao sair do viewport
+                anchorPlacement: 'top-bottom' // Posicionamento da âncora
+            });
+            
+            // Efeito de "digitação" para o título
+            const titleElement = document.querySelector('h1');
+            if (titleElement) {
+                const title = titleElement.textContent;
+                titleElement.textContent = '';
+                
+                let i = 0;
+                // Função para digitar o título letra por letra
+                function typeWriter() {
+                    if (i < title.length) {
+                        titleElement.textContent += title.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100); // Velocidade da digitação
+                    }
+                }
+                
+                // Iniciar o efeito após um pequeno atraso
+                setTimeout(typeWriter, 500);
+            }
+            
+            // Adicionar efeito de parallax ao rolar a página
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.pageYOffset;
+                
+                // Efeito parallax para as estrelas
+                document.getElementById('stars').style.transform = `translateY(${scrollPosition * 0.1}px)`;
+                document.getElementById('stars2').style.transform = `translateY(${scrollPosition * 0.2}px)`;
+                document.getElementById('stars3').style.transform = `translateY(${scrollPosition * 0.3}px)`;
+            });
+        });
+    </script>
+</body>
+</html> 

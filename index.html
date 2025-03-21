@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags para configuração básica da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Inteligência Artificial</title>
+    
+    <!-- Importação da fonte Poppins do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Importação do arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Importação do CSS do AOS (Animate On Scroll) para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Overlay de estrelas para o fundo -->
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="logo-container" data-aos="fade-down">
+            <img src="imgs/logo_com_fonte_branca_e_fundo_transparente.png" alt="Logo do Curso" class="logo">
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="hero" data-aos="fade-up">
+            <h1>Curso de Inteligência Artificial</h1>
+            <p class="subtitle">Preparando colaboradores para o futuro da tecnologia</p>
+        </section>
+
+        <section class="content-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="content-card">
+                <h2>Resumo e Objetivos</h2>
+                <div class="content-text">
+                    <p>A melhoria recente nos modelos de inteligência artificial faz com que o profissional do presente se prepare para um futuro que parece ser impossível de se planejar para.</p>
+
+                    <p>O que sabemos é que a condição humana ainda apresenta capacidades infinitamente superiores às de qualquer modelo artificial. E acreditamos que esta verdade permanecerá por muito mais tempo que a nossa existência.</p>
+
+                    <p>Mesmo assim, também reconhecemos que, para determinadas tarefas, esses modelos com enorme grau de raciocínio e conhecimento são capazes de nos complementar de uma forma em que é possível chegar muito mais longe do que antes, chegar mais próximos dos nossos sonhos e trabalhar de uma forma mais completa.</p>
+
+                    <p>Ou seja, o profissional do futuro é o que compreende onde a IA o complementa.</p>
+
+                    <p><strong>A forma que abordamos isto neste curso, é pragmática</strong>. Objetivamos responder da melhor forma, duas perguntas:</p>
+                    <ul>
+                        <li>Quais são as capacidades que os modelos de linguagem possuem que nós não possuímos?</li>
+                        <li>Quais são as capacidades que nós possuímos que os modelos de linguagem não possuem?</li>
+                    </ul>
+
+                    <p>Depois da compreensão das nossas diferenças, trabalharemos a complementariedade. Vamos te ensinar como se comunicar e usar os diferentes modelos/ferramentas da forma mais produtiva, segura e eficiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section" data-aos="fade-up" data-aos-delay="300">
+            <button id="inscricao-btn" class="cta-button">Quero me inscrever</button>
+            <button id="ementa-btn" class="cta-button">Ementa e Cronograma</button>
+        </section>
+    </main>
+
+    <!-- Modal de inscrição -->
+    <div id="inscricao-modal" class="modal">
+        <div class="modal-content" data-aos="zoom-in">
+            <span class="close-modal">&times;</span>
+            <h2>Inscrição no Curso</h2>
+            <form id="inscricao-form">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required>
+                </div>
+                <button type="submit" class="submit-button">Enviar inscrição</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Curso de Inteligência Artificial. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> 
