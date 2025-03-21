@@ -1,0 +1,281 @@
+/* Reset básico para eliminar margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo do documento */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../assets/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Adiciona um overlay escuro sobre o fundo para melhorar a legibilidade */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 27, 66, 0.85); /* Azul escuro da paleta com transparência */
+    z-index: -1;
+}
+
+/* Container principal que organiza todo o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container para a logo */
+.logo-container {
+    max-width: 200px;
+}
+
+/* Estilo da logo */
+.logo {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(1, 105, 153, 0.7)); /* Brilho azul claro */
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Título principal com efeito de brilho */
+.title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #FFA552; /* Laranja da paleta */
+    text-shadow: 0 0 10px rgba(255, 165, 82, 0.7); /* Brilho */
+    letter-spacing: 1px;
+}
+
+/* Seção de conteúdo */
+.content-section {
+    background: rgba(26, 55, 87, 0.7); /* Azul médio com transparência */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #976391; /* Roxo claro da paleta */
+}
+
+/* Texto do conteúdo */
+.content-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Container dos botões de ação */
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo base dos botões */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Botão primário (Inscrever-se) */
+.primary-btn {
+    background: linear-gradient(135deg, #247151, #19543c); /* Verde */
+    color: white;
+}
+
+/* Efeito hover para botão primário */
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(36, 113, 81, 0.4);
+}
+
+/* Botão secundário (Ementa) */
+.secondary-btn {
+    background: linear-gradient(135deg, #016999, #001B42); /* Azul */
+    color: white;
+}
+
+/* Efeito hover para botão secundário */
+.secondary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(1, 105, 153, 0.4);
+}
+
+/* Estilo do footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow: auto;
+    backdrop-filter: blur(5px);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background: linear-gradient(135deg, #1a3757, #001B42);
+    margin: 10% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Botão de fechar o modal */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilo para grupos de campo do formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para labels do formulário */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Estilo para inputs do formulário */
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo para inputs focados */
+input:focus {
+    outline: none;
+    border-color: #FFA552; /* Laranja */
+    box-shadow: 0 0 5px rgba(255, 165, 82, 0.5);
+}
+
+/* Estilo para link */
+a {
+    color: #FFA552; /* Laranja */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efeito hover para links */
+a:hover {
+    color: #BD4B5C; /* Vermelho */
+    text-decoration: underline;
+}
+
+/* Estilos para partículas de estrelas (efeito espacial) */
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-section {
+        padding: 20px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .modal-content {
+        margin: 20% auto;
+    }
+} 
