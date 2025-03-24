@@ -4,7 +4,7 @@ Gostaria que você construísse o site para mim. Que será hospedado no GitHub P
 
 O objetivo do site é divulgar um curso de Inteligência Artificial que estou dando para os colaboradores de diferentes empresas.
 
-Quero criar um site com tema espaço e moderno para o curso de Inteligência Artificial que estou dando para os colaboradores de diferentes empresas.
+Quero criar um site moderno para o curso de Inteligência Artificial que estou dando para os colaboradores de diferentes empresas.
 
 Neste momento, só é necessário uma primeira página onde veremos o resumo e objetivos do curso. Ela deve conter botões na parte inferior dizendo quero me inscrever, que deve abrir para um formulário onde a pessoa coloca seu nome e Whatsapp. E outro botão com o nome Ementa e Cronograma.
 
@@ -15,7 +15,7 @@ O conteúdo já está na pasta ementa. Preciso que crie a primeira página onde 
 
 ## Estilo do site
 
-Gostaria de animações legais. Mas nada que impacte a visão no mobile. O tema é espaço, moderno e minimalista.
+O tema é espaço, moderno e minimalista.
 
 A fonte utilizada nos textos é poppins
 

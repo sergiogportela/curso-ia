@@ -8,7 +8,7 @@
 /* Estilo do corpo do documento */
 body {
     font-family: 'Poppins', sans-serif;
-    background: url('../assets/images/background.jpg') no-repeat center center fixed;
+    background: url('../imgs/background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     line-height: 1.6;
@@ -74,8 +74,8 @@ body::before {
 .title {
     font-size: 3rem;
     margin-bottom: 40px;
-    color: #FFA552; /* Laranja da paleta */
-    text-shadow: 0 0 10px rgba(255, 165, 82, 0.7); /* Brilho */
+    color: #006400; /* Dark green */
+    text-shadow: 0 0 10px rgba(0, 100, 0, 0.7); /* Dark green glow */
     letter-spacing: 1px;
 }
 
